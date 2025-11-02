@@ -1,8 +1,8 @@
 <?php
 // Токен телеграм бота
-$tg_bot_token = "8299299813:AAFFG6pxYAoBj5teKz-h_ZNf-0m1eMKk9C0";
+$tg_bot_token = "dgdgb";
 // ID Чата
-$chat_id = "-4819971637";
+$chat_id = "";
 
 $text = 'Новый заказ!   ';
 
@@ -47,5 +47,6 @@ foreach ( $_FILES as $file ) {
 
     unlink($file['name']);
 }
+
 
 die('1');
