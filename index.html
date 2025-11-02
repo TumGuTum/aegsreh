@@ -1,0 +1,934 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vape</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/media.css">
+  <link rel="stylesheet" href="./style/mobile.css">
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu--close"></div>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <img src="./img/MainLogo.png" alt="MEGALODON">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__close">
+            <button class="menu__close-btn">
+              <img src="./img/icons8-крестик-78.png" alt="крестик">
+            </button>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link___main">Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Товары</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+          <li class="mobile-nav">
+            <ul class="mobile-actions">
+              <li class="user-actions__item">
+                <a href="#" title="Открыть корзину">
+                  <img src="./img/icons8-корзина-96.png"  alt="корзина">
+                  <div id="cart-count" class="cart-count" aria-hidden="true" style="display:none">0</div>
+                </a>
+              </li>
+              
+              <li class="user-actions__item user-actions__item-tg"><a href="#" class="user-actons__lnk"><img src="./img./icons8-телеграм-100.png" alt="корзина"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="user-actions">
+        <li class="user-actions__item">      <a href="#"id="cart-btn" title="Открыть корзину">
+          <img src="./img/icons8-корзина-96.png" alt="корзина">
+          <div id="cart-count" class="cart-count" aria-hidden="true" style="display:none">0</div>
+        </a></li>
+       
+        <li class="user-actions__item user-actions__item-tg"><a href="https://web.telegram.org/a/#7815030119" class="user-actons__lnk"><img src="./img/icons8-телеграм-100.png" alt="корзина"></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="top">
+    <div class="container">
+      <div class="top-inner">
+        <table>
+          <thead>
+            <tr>
+              <th><h1 class="top__title">MEGALODON </h1></th>
+              <th>
+                <p class="top__text">
+                  <img src="./img/icons8-качество-64.png" alt="icon__main">Гарантия качества<br>
+                  <img src="./img/icons8-скидка-96.png" alt="icon__main">Приятные цены<br>
+                  <img src="./img/icons8-консультация-96.png" alt="icon__main">Консультации онлайн<br>
+                  <img src="./img/icons8-доставка-100.png" alt="icon__main">Быстрая доставка
+                </p>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div class="blue-spot"></div>
+    <div class="blue-line">
+
+    </div>
+    <img src="./img/ChatGPT Image 6 окт. 2025 г., 17_59_05.png" alt="Товар" class="top-img">
+    <img src="./img/ChatGPT Image 6 окт. 2025 г., 18_15_41.png" alt="Товар" class="top-img2">
+    <img src="./img/ChatGPT Image 6 окт. 2025 г., 18_15_41.png" alt="Товар" class="top-img3">
+    <img src="./img/ChatGPT Image 6 окт. 2025 г., 18_15_41.png" alt="Товар" class="top-img4">
+    <img src="./img/pngwing.com (8).png" alt="Товар" class="top-img5">
+    <img src="./img/pngwing.com (9).png" alt="Товар" class="top-img6">
+    <img src="./img/pngwing.com (10).png" alt="Товар" class="top-img7">
+    <img src="./img/pngwing.com (11).png" alt="Товар" class="top-img8">
+    <img src="./img/pngwing.com (10).png" alt="Товар" class="top-img9">
+  </section>
+  <section class="warning-section">
+    <section class="warning-section">
+      <div class="scroll-container">
+        <div class="scroll-track">
+          <span>* курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает *</span>
+          <span>* курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает *</span>
+          <span>* курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает * курение убивает *</span>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="news-section">
+    <h2 class="news-section__title">Новости</h2>
+  
+    <div class="news-section__gallery">
+      <div class="news-section__slides">
+        <img src="./img/Лагерь Canvas Баннер.png" alt="news1">
+
+        <img src="./img/Лагерь Canvas Баннер.png" alt="news3">
+
+        <img src="./img/Лагерь Canvas Баннер.png" alt="news3">
+      </div>
+      <div class="news-section__dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="assortment">
+
+<div class="container">
+  <div class="assortment__titles">
+    <span class="assortment__number">1</span>
+    <div class="assortment__text">
+      <h2 class="assortment__title">Товары</h2>
+      <h2 class="assortment__title--mini">Жидкости</h2>
+      
+    </div>
+  </div>
+  <h3 class="assortment__title--mini2"><i><span class="my-colored-text">*</span>Попробуй все вкусы!</i></h3>
+  <div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion1">
+        <label for="accordion1" class="accordion-item-title"><span>+</span>Elfliq - Рекомендации по выбору</label>
+        <div class="accordion-item-desc">
+          Elfliq известна на рынке вейп-товаров как жидкость премиум-качества. Только посмотрите на ее характеристики:
+Равное соотношение VG/PG в жиже соответствует параметрам многократных под-систем, обеспечивая комфортное парение, насыщенный вкус и правильную эксплуатацию электронки.
+Флакон, в котором можно купить Elfliq, имеет оптимальный объем и обеспечивает удобную заправку картриджа.<div>⠀</div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <ul class="assortment__list">
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359079.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Elfliq - Strawberry Ice</p>
+            <p class="card__description">Вкус: Клубничный лед<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости: 5<br>
+
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">150 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>Кинуть в корзину</span></button>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359080.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods Киви</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">210 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img class="main_mg" src="./img/5202125996382359080.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods Дыня</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">180 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359083.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359081.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359082.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+
+    </li>
+    
+  </ul>
+  
+  <div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion4">
+        <label for="accordion4" class="accordion-item-title"><span>+</span>Elix - Рекомендации по выбору</label>
+        <div class="accordion-item-desc">
+          Elfliq известна на рынке вейп-товаров как жидкость премиум-качества. Только посмотрите на ее характеристики:
+Равное соотношение VG/PG в жиже соответствует параметрам многократных под-систем, обеспечивая комфортное парение, насыщенный вкус и правильную эксплуатацию электронки.
+Флакон, в котором можно купить Elfliq, имеет оптимальный объем и обеспечивает удобную заправку картриджа.<div>⠀</div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <ul class="assortment__list">
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382358791.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Elix - Кавун & М'ята</p>
+            <p class="card__description">Вкус: Арбуз & Мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости: 5<br>
+
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">180 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>Кинуть в корзину</span></button>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359075.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods Киви</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">210 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img class="main_mg" src="./img/5202125996382359076.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods Дыня</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">180 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359076.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359077.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359078.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382358791.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    <li class="assortment__item">
+      <div class="card">
+
+        <section  class="card">
+          <img src="./img/5202125996382359077.jpg" alt="">
+          <div class="card__content">
+            <p class="card__title">Chaser For Pods</p>
+            <p class="card__description">Вкусы: Свежая мята<br>
+
+Объем: 30 мл<br>
+PG/VG: 50/50<br>Шкала крепости:<br>
+<img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"><img src="./img/icons8-череп-96.png" alt="" class="strong__head"></p>
+            <!-- Важно: именно этот элемент читается скриптом -->
+            <p class="card__price">350 ₽</p>
+
+            <div class="card__buttons">
+              <button class="buy-btn"><span>В корзину</span></button>
+              <button class="info-btn"><span>Купить</span></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </li>
+    </li>
+    
+  </ul>
+</div>
+
+  
+
+</div>
+
+  </section>
+  <section class="assortment__vape">
+    <div class="container">
+
+      <div class="assortment__titles">
+        <span class="assortment__number">2</span>
+        <div class="assortment__text">
+          <h2 class="assortment__title--mini">Под -</h2>
+          <h2 class="assortment__title--mini">системы</h2>
+          
+        </div>
+      </div>
+      <h3 class="assortment__title--mini2"><i><span class="my-colored-text">*</span>Раскроют весь потенциал жидкости</i></h3>
+      <div class="accordion">
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion2">
+            <label for="accordion2" class="accordion-item-title"><span>+</span>Особенности под-систем</label>
+            <div class="accordion-item-desc">
+              Elfliq известна на рынке вейп-товаров как жидкость премиум-качества. Только посмотрите на ее характеристики:
+    Равное соотношение VG/PG в жиже соответствует параметрам многократных под-систем, обеспечивая комфортное парение, насыщенный вкус и правильную эксплуатацию электронки.
+    Флакон, в котором можно купить Elfliq, имеет оптимальный объем и обеспечивает удобную заправку картриджа.<div>⠀</div>
+          </div>
+        </div>
+      </div>
+    
+      <ul class="assortment__list">
+        <li class="assortment__item"><div class="card">
+          <section class="card">
+            <img src="./img/5202125996382359076.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+    Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+              </p>
+              <div class="card__buttons">
+                <button class="buy-btn">В корзину</button>
+                <button class="info-btn">Купить</button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+        <li class="assortment__item"><div class="card">
+          <section  class="card">
+            <img src="./img/5202125996382358791.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+    Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+              </p>
+              <div class="card__buttons">
+                <button class="buy-btn">В корзину</button>
+                <button class="info-btn">Купить</button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+        <li class="assortment__item"><div class="card">
+          <section  class="card">
+            <img src="./img/5202125996382359075.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+    Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+              </p>
+              <div class="card__buttons">
+                <button class="buy-btn">В корзину</button>
+                <button class="info-btn">Купить</button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+        <li class="assortment__item"><div class="card">
+          <section  class="card">
+            <img src="./img/5202125996382359077.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+
+              </p>
+              <p class="card__price">350 ₽</p>
+              <div class="card__buttons">
+                <button class="buy-btn"><span>В корзину</span></button>
+                <button class="info-btn"><span>Купить</span></button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+        <li class="assortment__item"><div class="card">
+          <section  class="card">
+            <img src="./img/5202125996382359078.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+    Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+              </p>
+              <div class="card__buttons">
+                <button class="buy-btn">В корзину</button>
+                <button class="info-btn">Купить</button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+        <li class="assortment__item"><div class="card">
+          <section  class="card">
+            <img src="./img/5202125996382359079.jpg" alt="">
+            <div class="card__content">
+              <p class="card__title">Chaser For Pods</p>
+              <p class="card__description">Вкусы:
+    - Свежая мята
+    - Лимонный чизкейк
+    - Гуава гейпфрут
+    - Киви лайм<br>
+    Объем: 30 мл.<br>
+    
+    PG/VG: 50/50<br>
+    
+    Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+              </p>
+              <div class="card__buttons">
+                <button class="buy-btn"><span>В корзину</span></button>
+                <button class="info-btn"><span>Купить</span></button>
+              </div>
+            </div>
+            
+          </section>
+          
+        </li>
+    
+        </li>
+      </ul>
+      
+    </div>
+      </section>
+      <section class="assortment__odnoraz">
+        <div class="container">
+    
+          <div class="container">
+            <div class="assortment__titles">
+              <span class="assortment__number">3</span>
+              <div class="assortment__text">
+                <h2 class="assortment__title">Одноразовые</h2>
+                <h2 class="assortment__title--mini">устройства</h2>
+                
+              </div>
+            </div>
+            <h3 class="assortment__title--mini2"><i><span class="my-colored-text">*</span>Если что, это имба</i></h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                  <input type="checkbox" id="accordion3">
+                  <label for="accordion3" class="accordion-item-title"><span>+</span>Почему это имба?</label>
+                  <div class="accordion-item-desc">
+                    Elfliq известна на рынке вейп-товаров как жидкость премиум-качества. Только посмотрите на ее характеристики:
+          Равное соотношение VG/PG в жиже соответствует параметрам многократных под-систем, обеспечивая комфортное парение, насыщенный вкус и правильную эксплуатацию электронки.
+          Флакон, в котором можно купить Elfliq, имеет оптимальный объем и обеспечивает удобную заправку картриджа.<div>⠀</div>
+                </div>
+              </div>
+            </div>
+          <ul class="assortment__list">
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn">В корзину</button>
+                    <button class="info-btn">Купить</button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn">В корзину</button>
+                    <button class="info-btn">Купить</button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn">В корзину</button>
+                    <button class="info-btn">Купить</button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn"><span>В корзину</span></button>
+                    <button class="info-btn"><span>Купить</span></button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn">В корзину</button>
+                    <button class="info-btn">Купить</button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+            <li class="assortment__item"><div class="card">
+              <section class="card">
+                <img src="./img/chaser-for-pods-salt-blakytna-malyna-30ml-50mg-1000x1000.jpg" alt="">
+                <div class="card__content">
+                  <p class="card__title">Chaser For Pods</p>
+                  <p class="card__description">Вкусы:
+        - Свежая мята
+        - Лимонный чизкейк
+        - Гуава гейпфрут
+        - Киви лайм<br>
+        Объем: 30 мл.<br>
+        
+        PG/VG: 50/50<br>
+        
+        Крепость мг/мл: 20, 20 Strong, 20 Ultra<br>
+                  </p>
+                  <div class="card__buttons">
+                    <button class="buy-btn"><span>В корзину</span></button>
+                    <button class="info-btn"><span>Купить</span></button>
+                  </div>
+                </div>
+                
+              </section>
+              
+            </li>
+        
+            </li>
+          </ul>
+        </div>
+
+        <section class="delivery-section" aria-labelledby="delivery-title">
+          <div class="container">
+            <h2 id="delivery-title" class="delivery-title">Как работает доставка?</h2>
+        
+            <div class="delivery-grid">
+              <!-- Контейнер карты -->
+              <div id="map" style="height:400px; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,0.1);"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1383771.4584056388!2d27.921907413556458!3d47.35967194028713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c951a8b54bb0cf%3A0x77b4bd5d6cd0ce46!2z0JDQtNC80LjQvdC40YHRgtGA0LDRgtC40LLQvdC-LdGC0LXRgNGA0LjRgtC-0YDQuNCw0LvRjNC90YvQtSDQtdC00LjQvdC40YbRiyDQu9C10LLQvtCx0LXRgNC10LbRjNGPINCU0L3QtdGB0YLRgNCwLCDQnNC-0LvQtNC-0LLQsA!5e0!3m2!1sru!2s!4v1759912139316!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        
+              <div class="delivery-info">
+                <p class="lead">Доставляем заказ по всему Приднестровью во все направления экспресс‑почтой.</p>
+                <ul class="delivery-list">
+                  <li><strong><span class="highlight">Скорость:</span></strong> экспресс‑доставка по всей территории до трёх дней.</li>
+                  <li><strong><span class="highlight">Упаковка:</span></strong> надежная профессиональная упаковка — безопасно для жидкостей и pod‑систем.</li>
+                  <li><strong><span class="highlight">Бесплатная доставка:</span></strong> при заказе от <span class="highlight">200 руб.</span> доставка бесплатна.</li>
+                </ul>
+                <div class="delivery-cta">
+                  <a class="btn" href="#order">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          
+</main>
+<form class="sms-form">
+<div id="cart-popup" class="cart-popup" aria-hidden="true">
+  
+  
+  <div class="cart-popup__content" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <h2 id="cart-title">Корзина</h2>
+
+
+    
+    <input type="text" name="name" required placeholder="Ваше имя">
+    <input type="tel" name="phone" required placeholder="Телефон">
+    <input type="text" name="social-media" required placeholder="В какую соц-сеть написать?">
+    <button id="cart-close" class="cart-popup__close" aria-label="Закрыть" type="button">&times;</button>
+   
+
+    <ul id="cart-items"></ul>
+
+    <div class="cart-summary">
+      <div>Итого:</div>
+      <div id="cart-total" name = "OrderSum">0 ₽</div>
+    </div>
+    <input type="hidden" name="OrderSum" id="OrderSum">
+    <input type="hidden" name="OrderItems" id="OrderItems">
+
+    <button id="order-btn" class="order-btn" type="submit">Заказать</button>
+  </div>
+>
+
+    </form>
+  </div>
+ 
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/sms.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+</body>
+</html>

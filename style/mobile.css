@@ -1,0 +1,266 @@
+@media (max-width: 1200px){
+    .top__title{
+        font-size: 50px;
+    }
+	.menu__btn{
+		display: flex;
+	}
+    .menu__list{
+		display: none;
+	}
+    .user-actions{
+        display: none;
+    }
+    .menu__list {
+        position: fixed;         /* фиксируем на экране */
+        top: 0;
+        left: -250px;            /* изначально скрыто за левым краем */
+        width: 250px;            /* ширина меню */
+        height: 100%;            /* растягиваем на всю высоту экрана */
+        background-color: #202020;
+        display: flex;
+        flex-direction: column;  /* вертикальные пункты */
+        padding-top: 60px;
+        padding-left: 0;
+        margin: 0;
+        transition: left 0.3s ease; /* плавное выезжание */
+        z-index: 2000;
+    }
+    
+    /* Когда меню открыто */
+    .menu__list.active {
+        left: 0;   /* меню выезжает на экран */
+    }
+    
+
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+        display: block;
+    }
+    .user-actions__item-tg{
+	margin-left: 0;
+
+
+}
+    .mobile-nav,
+    .menu__close{
+	display: block;
+    
+    }
+    .menu__item{
+        margin-bottom: 30px;
+
+    }
+    .mobile-actions{
+        background-color: #2073b6;
+        height: 60px;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu__close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    .menu__close-btn img{
+        width: 30px;
+
+    }
+
+	.menu__btn{
+		display: flex;
+	}
+}
+@media (max-width: 600px) {
+
+
+
+    .assortment__title{
+        font-size: 20px;
+    }
+  }
+@media (max-width: 1000px){
+	.user-actions__item-tg{
+		margin-left: 30px;
+	}
+	.menu{
+		margin-right: auto;
+
+	}
+	.logo{
+		margin-bottom: 0;
+
+	}
+	.header__inner{
+			min-height: auto;
+	}
+
+	.container{
+		width: 100%;
+	}
+	.main{
+		width: 100%;
+	}
+	.menu__list{
+		display: none;
+	}
+	.menu__btn{
+		display: flex;
+	}
+	.menu{
+
+		margin-right: 0;
+	}
+	.logo{
+
+	}
+    .menu__list{
+        transform: translateY(-110%);
+		position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 480px;
+        background-color: #202020;
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 0;
+        transition: transform .6s ease;
+        
+
+        z-index: 10000;
+    
+	}
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+        display: block;
+    }
+    .top__title{
+        font-size: 40px;
+    }
+    .top__text{
+        margin-left: 100px;
+    }
+}
+@media (max-width: 860px){
+
+    .top__title{
+        font-size: 36px;
+    }
+    .top__text{
+        margin-left: 85px;
+    }
+
+	.top-img{
+		max-height: 280px;
+	}
+
+}
+@media (max-width: 768px){
+	.header__inner{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    table, thead, tr {
+        display: block;
+        width: 100%;
+      }
+    
+      th {
+        display: block;
+        width: 100%;
+        text-align: center;  
+        
+
+      }
+      th .top__title{
+       padding-bottom: 0;
+      }
+      .top-img{
+        display: none;
+	
+	}
+    .logo{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .top__text{
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .top__title{
+        font-size: 45px;
+    }
+
+}
+@media (max-width: 480px){
+
+    .menu__list{
+
+        width: 360px;
+
+    
+	}
+    .news-section__slides img {
+        width: 10%;
+        height: auto; /* сохраняет пропорции изображения */
+        max-height: 80vh; /* не больше 80% высоты экрана */
+        object-fit: cover; /* красиво обрезает лишнее */
+        scroll-snap-align: center;
+        border-radius: 20px;
+      }
+    .top__title{
+        font-size: 30px;
+    }
+    .menu__list{
+        transform: translateY(-110%);
+		position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 360px;
+        background-color: #202020;
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 0;
+        transition: transform .6s ease;
+        
+
+        z-index: 10000;
+    
+	}
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+        display: block;
+    }
+
+}
+@media (max-width: 360px){
+	.menu__list{
+        transform: translateY(-110%);
+		position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 360px;
+        background-color: #202020;
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 0;
+        transition: transform .6s ease;
+        
+
+        z-index: 10000;
+    
+	}
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+        display: block;
+    }
+}
