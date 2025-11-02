@@ -11,28 +11,25 @@
     .user-actions{
         display: none;
     }
-    .menu__list {
-        position: fixed;         /* фиксируем на экране */
+    .menu__list{
+        transform: translateY(-2000%);
+		position: absolute;
         top: 0;
-        left: -250px;            /* изначально скрыто за левым краем */
-        width: 250px;            /* ширина меню */
-        height: 100%;            /* растягиваем на всю высоту экрана */
+        left: 0;
+        right: 0;
+        width: 100%;
         background-color: #202020;
-        display: flex;
-        flex-direction: column;  /* вертикальные пункты */
+        display: block;
+        text-align: center;
         padding-top: 60px;
+        margin-top: 0;
         padding-left: 0;
-        margin: 0;
-        transition: left 0.3s ease; /* плавное выезжание */
-        z-index: 2000;
-    }
-    
-    /* Когда меню открыто */
-    .menu__list.active {
-        left: 0;   /* меню выезжает на экран */
-    }
-    
+        transition: transform .6s ease;
+        
 
+        z-index: 2000;
+    
+	}
     .menu__list.menu__list--open{
         transform: translateY(0%);
         display: block;
@@ -75,9 +72,21 @@
 	}
 }
 @media (max-width: 600px) {
-
-
-
+    .assortment__list {
+      grid-template-columns: 1fr; /* одна карточка в ряд */
+      gap: 20px;
+    }
+  
+    section.card {
+        max-width: 335px;
+        align-items: center;
+    }
+    .card:hover {
+        transform: scale(1);
+        box-shadow: 0 2px 8px rgba(0.5, 0.5, 0.5, 0.5);
+        background-color: #1d1a1a;
+        color: #ffffff;
+      }
     .assortment__title{
         font-size: 20px;
     }
@@ -217,7 +226,7 @@
         font-size: 30px;
     }
     .menu__list{
-        transform: translateY(-110%);
+        transform: translateY(-2000%);
 		position: absolute;
         top: 0;
         left: 0;
@@ -242,7 +251,7 @@
 }
 @media (max-width: 360px){
 	.menu__list{
-        transform: translateY(-110%);
+        transform: translateY(-2000%);
 		position: absolute;
         top: 0;
         left: 0;
