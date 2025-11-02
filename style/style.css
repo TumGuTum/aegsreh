@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 html {
+	
 	box-sizing: border-box;
   }
   
@@ -957,5 +960,6 @@ html {
 	  @media(max-width:900px){.delivery-grid{grid-template-columns:1fr;}}
 	  
 	  
+
 
 
