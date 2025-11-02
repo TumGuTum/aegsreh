@@ -60,7 +60,6 @@ html {
 	font-weight: 300px;
 	position: relative;
 
-
   }
 
   
@@ -605,135 +604,156 @@ html {
 
 
 
-  
-  * { box-sizing: border-box; }
-  html,body { margin:0; padding:0; }
-  
-  /* 2) Сама сетка карточек — ограничиваем максимальную ширину колонки и центрируем grid */
-  .assortment__list {
-	display: grid;
-	/* колонки не тянутся до 1fr, а имеют max-width 320px */
-	grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
-	gap: 20px;
-	padding: 20px;
-	margin: 0 auto;
-	list-style: none;
-	justify-content: center;    /* центрируем весь grid, когда он уже меньше контейнера */
-	width: 100%;
-	max-width: 1240px;
-  }
-  
-  /* 3) каждый li — центрирует свою карточку (на случай, если li получает padding/margin) */
-  .assortment__item {
-	display: flex;
-	justify-content: center;
-	align-items: stretch;
-	padding: 0;
-	margin: 0;
-  }
-  
-  /* 4) карточка — фиксируем max-width и полосу поведения */
-  .card, section.card {
-	width: 100%;
-	max-width: 320px;           /* ширина самой карточки */
-	background: #111;
-	border-radius: 10px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-  }
-  
-  /* 5) изображение и контент */
-  .card img {
-	width: 100%;
-	height: auto;
-	display: block;
-	object-fit: cover;
-  }
-  .card__content { padding: 12px; box-sizing: border-box; }
-  
-  /* 6) На мобильных оставляем одну колонку и даём карточке отступы, но она остаётся по центру */
-  @media (max-width: 760px) {
-	.assortment__list {
-	  grid-template-columns: repeat(1, minmax(250px, 320px));
-	  justify-content: center;
-	  padding: 12px;
-	}
-  
-	.card { max-width: 90%; } /* запас слева/справа — карточка не впритык к краю */
-  }
-  
-  /* 7) Радикальная защита от старых конфликтов — если у тебя где-то прописано width:400px и т.д. */
-  .assortment__list .card,
-  .assortment__item .card,
+
+
+
   section.card {
-	max-width: 320px !important;
-	width: 100% !important;
+	position: relative;
+	width: 100%; /* вместо 335px */
+	max-width: 500px; /* можно ограничить */
+	height: 250px;
+	background-color: #0f0f0f;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	perspective: 1000px;
+	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	padding: 0;
+  }
+  .card svg {
+	fill: #000;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0, 0);
+	border-radius: 3px;
+  }
+  .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 2px 8px rgba(0.5, 0.5, 0.5, 0.5);
+	background-color: #1d1a1a;
+	color: #ffffff;
   }
   
-  /* Содержимое карточки */
   .card__content {
 	color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	padding: 15px;
-	background-color: #202020;
+	height: 100%;
+	padding: 20px;
 	box-sizing: border-box;
+	background-color: #202020;
+	transform: rotateX(-90deg);
+	transform-origin: bottom;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card__content {
+	backface-visibility: hidden;
+	will-change: transform;
+	border-radius: 10px;
+  }
+  .card:hover .card__content {
+	transform: rotateX(0deg);
   }
   
-  /* Кнопки */
-  .card__buttons {
-	display: flex;
-	gap: 10px;
-	margin-top: 10px;
+  .card__title {
+	margin: 0;
+	padding-left: 5px;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 700;
   }
   
+  .card:hover svg {
+	scale: 0;
+  }
+  /* Картинка товара */
+.card img {
+	width:110%;
+	height: 110%;
+	object-fit: contain; 
+
+  }
+  
+  .card__description {
+	margin: 10px 0 0;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 1.4;
+	text-align: left;
+  }
+  /* Commands to change the shadows in dark mode
+  @media (prefers-color-scheme: dark) {
+	.card:hover {
+	box-shadow: 0 8px 16px #000000;
+	}
+  }*/
+  
+  .assortment__title{
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 0;
+
+  }
+  .strong__head{
+	width: 20px !important;
+  }
+  .assortment__title--mini{
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: 0;
+
+
+  }
+
+  .card img{
+	width: 400px;
+  }
+  .card__buttons{
+	margin-top: 20px;
+  }
   .card__buttons .buy-btn,
   .card__buttons .info-btn {
+	position: relative;
 	flex: 1;
 	padding: 8px 16px;
-	border-radius: 10px;
-	border: 1px solid #ffffff;
+	border: none;
+	border-radius: 15px;
 	background: #202020;
 	color: #2073b6;
+	font-size: 14px;
 	font-weight: 700;
-	transition: all 0.3s ease;
+	cursor: pointer;
+	overflow: hidden;
+	transition: color .25s ease;
+	z-index: 1; /* чтобы текст был выше ::before */
+	border: 1px solid #ffffff;
   }
   
+  .card__buttons .buy-btn::before,
+  .card__buttons .info-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background: #2073b6;
+	transition: width .25s ease;
+	z-index: -1; /* под текстом */
+  }
+  
+  /* при наведении */
   .card__buttons .buy-btn:hover,
   .card__buttons .info-btn:hover {
-	background: #2073b6;
-	color: #fff;
+	color: #fff !important; /* перебиваем глобальное button{} */
   }
   
-  /* Мобильная версия */
-  @media (max-width: 600px) {
-	.assortment__wrapper {
-	  display: flex;
-	  justify-content: center;   /* Центрирует сетку по горизонтали */
-	}
-  
-	.assortment__list {
-	  display: grid;
-	  grid-template-columns: 1fr;  /* Одна колонка */
-	  max-width: 320px;            /* Ширина карточки */
-	  width: 100%;
-	  justify-items: center;       /* Центрирует карточку внутри grid */
-	}
-  
-	.assortment__item {
-	  width: 100%;
-	  display: flex;
-	  justify-content: center;     /* Карточка по центру */
-	}
-  
-	.card {
-	  max-width: 320px;
-	  width: 100%;
-	}
-}
-  
-  
+  .card__buttons .buy-btn:hover::before,
+  .card__buttons .info-btn:hover::before {
+	width: 100%;
+  }
 
 
 
