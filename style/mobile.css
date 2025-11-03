@@ -281,8 +281,8 @@
 }
 .top-img5 {
 	position: absolute;
-	left: 5%;
-	top: 250px; /* регулируй отступ от верхнего края секции */
+	left: 2%;
+	top: 280px; /* регулируй отступ от верхнего края секции */
 	transform: translateX(-50%);
 	transform: rotate(90deg);
 	max-height: 160px;
@@ -291,10 +291,10 @@
   }
 .top-img {
 	position: absolute;
-	left: 70%;
-	top: 250px; /* регулируй отступ от верхнего края секции */
+	left: 75%;
+	top: 280px; /* регулируй отступ от верхнего края секции */
 	transform: translateX(-50%);
-	max-height: 390px;
+	max-height: 380px;
 	width: auto;
 	z-index: 1;
 	animation: floatUpDown 8s ease-in-out infinite;
@@ -307,4 +307,14 @@
   .top__title{
     font-size: 34px;
 }
+.scroll-text {
+    font-size: 8px;
+    font-weight: 900;
+    color: #ffff;
+    letter-spacing: 2px;
+    padding-right: 100px; /* расстояние между повторениями */
+    flex-shrink: 0;
+    user-select: none;
+    text-transform: uppercase;
+  }
 }
