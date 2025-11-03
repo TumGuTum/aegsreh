@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-
 html {
-	
+
+
 	box-sizing: border-box;
   }
   
@@ -63,6 +63,7 @@ html {
 	font-weight: 300px;
 	position: relative;
 
+	
   }
 
   
@@ -293,21 +294,23 @@ html {
 	border-radius: 8px; 
 	transition: all 0.3s ease; 
   }
-  .menu--close{
+  .menu--close {
 	display: none;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0,.5);
+	background-color: rgba(0, 0, 0, 0);
 	z-index: 200;
-	transition: background-color .3s ease;
-  }
-  .menu--close.menu--open{
-	display: block;
+	transition: background-color 0.4s ease;
+}
 
-  }
+/* Когда меню открыто */
+.menu--close.menu--open {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 
   .news-section {
@@ -960,6 +963,5 @@ html {
 	  @media(max-width:900px){.delivery-grid{grid-template-columns:1fr;}}
 	  
 	  
-
 
 
