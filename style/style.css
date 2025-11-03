@@ -962,6 +962,69 @@ html {
 	  .btn:hover {background:#333;}
 	  @media(max-width:900px){.delivery-grid{grid-template-columns:1fr;}}
 	  
+	  .age-popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		backdrop-filter: blur(4px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 99999;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.4s ease, visibility 0.4s ease;
+	  }
 	  
+	  .age-popup.show {
+		opacity: 1;
+		visibility: visible;
+	  }
+	  
+	  .age-popup__content {
+		background: #202020;
+		color: #fff;
+		padding: 30px 25px;
+		border-radius: 20px;
+		text-align: center;
+		max-width: 300px;
+		font-size: 12px;
+		width: 90%;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		animation: popupFade 0.5s ease;
+	  }
+	  
+	  @keyframes popupFade {
+		from { transform: scale(0.8); opacity: 0; }
+		to { transform: scale(1); opacity: 1; }
+	  }
+	  
+	  .age-popup__buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	  }
+	  
+	  .age-popup__buttons button {
+		background: #333333;
+		border: none;
+		color: #fff;
+		font-size: 14px;
+		border-radius: 10px;
+		padding: 10px 20px;
+		cursor: pointer;
+		transition: background 0.3s ease;
+	  }
+	  
+	  .age-popup__buttons button:first-child {
+		background: #2073b6;
+	  }
+	  
+	  .age-popup__buttons button:hover {
+		opacity: 0.9;
+	  }
 
 
