@@ -14,7 +14,29 @@ menuClose.addEventListener('click', () => {
   menuShadow.classList.remove('menu--open');
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById("agePopup");
+  const btnYes = document.getElementById("ageYes");
+  const btnNo = document.getElementById("ageNo");
 
+  // Проверяем, было ли уже согласие
+  if (!localStorage.getItem("ageVerified")) {
+    popup.classList.add("show");
+  }
+
+  btnYes.addEventListener("click", function() {
+    localStorage.setItem("ageVerified", "true");
+    popup.classList.remove("show");
+  });
+
+  btnNo.addEventListener("click", function() {
+    alert("Доступ запрещён. Сайт будет закрыт.");
+    window.close();
+
+    // Если браузер не разрешает закрыть вкладку:
+    window.location.href = "https://google.com";
+  });
+});
 // Скрипт корзины
 document.addEventListener('DOMContentLoaded', () => {
   const cartBtn = document.getElementById('cart-btn');
